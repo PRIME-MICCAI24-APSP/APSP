@@ -1,0 +1,47 @@
+{
+    "n_splits": 10,
+    "seed": 42,
+    "save_model": false,
+    "id": "p_num",
+    "specific_test": true,
+    "train_set_eval": true,
+    "train_set_eval_cv_type": "train_all",
+    "cv_type": "train_all",
+    "valid_cases": ["S003", "S004", "S005", "S009", "S010",
+                    "S012", "S013", "S015", "S016", "S017",
+                    "S018", "S019", "S020", "S021", "S022",
+                    "S023", "S026", "S027", "S028", "S029",
+                    "S031", "S035"],
+    "gpu_ids": [6],
+    
+    "tabnet_params": {
+        "n_d": 2,
+        "n_a": 2,
+        "n_steps": 3,
+        "gamma": 1.3,
+        "n_independent": 2,
+        "n_shared": 2,
+        "lambda_sparse": 0.01,
+        "optimizer_fn": "Adam",
+        "optimizer_params": {
+            "lr": 0.02
+        },
+        "mask_type": "entmax",
+        "scheduler_params": {
+            "step_size": 50,
+            "gamma": 0.9
+        },
+        "scheduler_fn": "StepLR",
+        "epsilon": 1e-15
+    },
+    "fit_params": {
+        "eval_metric": ["mae"],
+        "max_epochs": 100,
+        "patience": 50,
+        "batch_size": 16,
+        "virtual_batch_size": 16,
+        "num_workers": 0,
+        "drop_last": false,
+        "loss_fn": "mse_loss"
+    }
+}

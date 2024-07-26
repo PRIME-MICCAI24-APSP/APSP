@@ -1,0 +1,29 @@
+{
+    "n_splits": 5,
+    "specific_test": true,
+    "train_set_eval": true,
+    "train_set_eval_cv_type": "5fold",
+    "internal_to_external_test": true,
+    "save_model": false,
+    "id": "p_num",
+    "valid_cases": ["S003", "S004", "S005", "S009", "S010",
+                    "S012", "S013", "S015", "S016", "S017",
+                    "S018", "S019", "S020", "S021", "S022",
+                    "S023", "S026", "S027", "S028", "S029",
+                    "S031", "S035"],
+
+    "scaler" : "StandardScaler",
+    "metric": "neg_mean_absolute_error",
+
+    "lasso_params": {
+        "alpha": [-4, -0.5, 30],
+        "fit_intercept": [true],
+        "precompute": [false],
+        "copy_X": [true],
+        "max_iter": [50, 100, 200, 500],
+        "tol": [0.0001, 0.001],
+        "warm_start": [false],
+        "positive": [false, true],
+        "random_state": [42]
+    }
+}

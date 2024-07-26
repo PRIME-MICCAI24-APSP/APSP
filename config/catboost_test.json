@@ -1,0 +1,25 @@
+{
+    "n_splits": 5,
+    "specific_test": true,
+    "save_model": true,
+    "train_set_eval": true,
+    "internal_to_external_test": true,
+    "id": "p_num",
+    "valid_cases": ["S003", "S004", "S005", "S009", "S010", 
+                    "S012", "S013", "S015", "S016", "S017", 
+                    "S018", "S019", "S020", "S021", "S022", 
+                    "S023", "S026", "S027", "S028", "S029", 
+                    "S031", "S035"],
+    "metric": "MAE",
+    "early_stopping_rounds": 50,
+    "iterations": 1000,
+    "catboost_params": {
+        "learning_rate": [0.01, 0.2],
+        "depth": [2, 10],
+        "l2_leaf_reg": [1, 5],
+        "border_count": [8, 255],
+        "random_strength": [1, 20],
+        "bagging_temperature": [0, 1]
+      }
+  }
+  
