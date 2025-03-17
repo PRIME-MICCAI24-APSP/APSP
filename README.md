@@ -1,5 +1,5 @@
 # APSP
-**[PRIME-MICCAI 2024] Automated Patient-Specific Pneumoperitoneum Model Reconstruction for Surgical Navigation Systems in Distal Gastrectomy** 
+🎉 **[PRIME-MICCAI 2024] Automated Patient-Specific Pneumoperitoneum Model Reconstruction for Surgical Navigation Systems in Distal Gastrectomy** 🎉 
 → [**PDF**](https://link.springer.com/chapter/10.1007/978-3-031-74561-4_7)
 
 ## Table of Contents
